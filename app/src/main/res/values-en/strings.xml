@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="appName">Hatomico</string>
+    <string name="receivedSms">Message received</string>
+    <string name="activated">Hatomico enabled</string>
+    <string name="pressOptions">Press here to see the options</string>
+    <string name="deactivated">Hatomico disabled</string>
+    <string name="suggestion">Suggestions for Hatomico</string>
+    <string name="testMessage">Hi, I am a test message</string>
+    <string name="unknown">Unknown</string>
+    <string name="messageFrom">Message from  </string>
+    <string name="contactList">Allowed contacts</string>
+    <string name="says">says</string>
+    <string name="from">from</string>
+    <string name="at">at</string>
+    <string name="ok">Ok</string>
+    <string name="devicesBound">Paired devices</string>
+    <string name="notificationSettings">Check if notification access is enabled for Hatomico in settings</string>
+    <string name="cancel">Cancel</string>
+    <string name="goToSettings">Go to settings</string>
+    <string name="all">Check/uncheck all</string>
+    <string name="degrees"> degrees </string>
+    <string name="whatsapp">whatsapp</string>
+    <string name="googlenow">google now</string>
+    <string name="hangouts">hangouts</string>
+    <string name="noApps">No apps enabled</string>
+    <string name="activatedApps"> apps enabled</string>
+    <string name="twitter">twitter</string>
+    <string name="gmail">g mail</string>
+    <string name="noBt">The device must have bluetooth support to use this feature</string>
+    <string name="enableBt">Enable the Bluetooth connectivity to use this feature</string>
+    <string name="emoticons">emoticons </string>
+    <string name="noBtPaired">You have no bluetooth devices paired with the phone</string>
+    <string name="reset">Reset Hatomico to apply changes</string>
+    <string name="info50">Since Android 5.0 is not possible to pick up automatically by operating system constraints. We are working to try to work around this obstacle.</string>
+
+</resources>

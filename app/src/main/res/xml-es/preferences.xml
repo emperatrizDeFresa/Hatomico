@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Llamadas entrantes" >
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="autoAnswer"
+            android:summary="Contestar automáticamente"
+            android:title="Auto respuesta" />
+
+        <ListPreference
+            android:defaultValue="4"
+            android:entries="@array/listArray"
+            android:entryValues="@array/listValues"
+            android:key="answerDelay"
+            android:summary="Elige la espera para descolgar automáticamente"
+            android:title="Tiempo de espera" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="speaker"
+            android:summary="Durante las llamadas"
+            android:title="Altavoz" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="callMax"
+            android:summary="Usar el volumen máximo en las llamadas"
+            android:title="Máximo volumen" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="callWhiteList"
+            android:summary="Contestar automáticamente SÓLO a los contactos seleccionados"
+            android:title="Usar filtro en llamadas" >
+        </CheckBoxPreference>
+
+        <Preference
+            android:key="whiteList"
+            android:summary="Lista de contactos a los que se contestará"
+            android:title="Filtro de contactos permitidos" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Notificaciones" >
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="smsOn"
+            android:summary="Leer en alto cuando lleguen"
+            android:title="Tratar notificaciones" />
+
+        <MultiSelectListPreference
+            android:entries="@array/listApps"
+            android:entryValues="@array/valueApps"
+            android:key="smsApps"
+            android:summary=""
+            android:title="Aplicaciones activadas" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="smsMax"
+            android:summary="Usar el volumen máximo para leer las notificaciones"
+            android:title="Máximo volumen" />
+
+        <ListPreference
+            android:defaultValue="2"
+            android:entries="@array/listSms"
+            android:entryValues="@array/valueSms"
+            android:key="smsType"
+            android:summary=""
+            android:title="Leer las notificaciones ..." />
+
+        <EditTextPreference
+            android:defaultValue=""
+            android:dialogMessage="Nombres de remitentes (o grupos) separados por comas que serán bloqueados"
+            android:dialogTitle="Lista negra de notificaciones"
+            android:key="notificationsBlackList"
+            android:summary="Notificaciones no permitidas"
+            android:title="Lista negra" >
+        </EditTextPreference>
+
+        <Preference
+            android:key="smsTest"
+            android:summary="Probar el tratamiento de notificaciones"
+            android:title="Prueba" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Encendido y apagado" >
+
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="switchOnBt"
+            android:summary="Bluetooth se activará al encender Hatomico"
+            android:title="Auto-activación bluetooth" />
+
+         <Preference
+
+            android:key="switchOffBt"
+            android:summary="Hatomico se encenderá cuando el dispositivo esté conectado"
+            android:title="Asociar dispositivo bluetooth" />
+        
+                  <CheckBoxPreference
+                      android:defaultValue="true"
+            android:key="screenOff"
+            android:summary="Apagar la pantalla despues de leer los mensajes"
+            android:title="Apagado de pantalla" />
+         
+        <Preference
+            android:key="switchOff"
+            android:summary="También puedes cerrar Hatomico pulsando en el icono después de activarlo"
+            android:title="Finalizar Hatomico" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="autoSwitchOff"
+            android:summary="Finalizar Hatomico al poner el móvil boca abajo (no compatible con todos los modelos)"
+            android:title="Auto apagado" >
+        </CheckBoxPreference>
+
+        <EditTextPreference
+            android:defaultValue="l,c,c"
+            android:dialogMessage="l - vibración larga, c - vibración corta"
+            android:dialogTitle="Patrón de vibración"
+            android:key="offPattern"
+            android:summary="Vibración indicadora de apagado"
+            android:title="Patrón de vibración" >
+        </EditTextPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Acerca de Hatomico" >
+        <Preference
+            android:key="version"
+            android:summary="Desarrollado por Emperatriz"
+            android:title="Hatomico" />
+        <Preference
+            android:key="sendMail"
+            android:summary="Envía una sugerencia"
+            android:title="Sugerencias" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

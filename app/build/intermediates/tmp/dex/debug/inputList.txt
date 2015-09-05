@@ -1,0 +1,1 @@
+/media/ramon/Almacen/Dropbox/AndroidStudio/Hatomico/app/build/intermediates/classes/debug

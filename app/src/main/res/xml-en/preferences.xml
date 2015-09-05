@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Incoming calls" >
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="autoAnswer"
+            android:summary="Automatically answer the phone"
+            android:title="Auto answer" />
+
+        <ListPreference
+            android:defaultValue="4"
+            android:entries="@array/listArray"
+            android:entryValues="@array/listValues"
+            android:key="answerDelay"
+            android:summary="Choose the wait time to auto answer"
+            android:title="Wait time" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="speaker"
+            android:summary="During calls"
+            android:title="Loudspeaker" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="callMax"
+            android:summary="Use the maximum volume during calls"
+            android:title="Maximum volume" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="callWhiteList"
+            android:summary="Autoanswer ONLY to the selected contacts"
+            android:title="Use filter in calls" >
+        </CheckBoxPreference>
+
+        <Preference
+            android:key="whiteList"
+            android:summary="List of contacts whom to answer"
+            android:title="Allowed contacts filter" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Notifications" >
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="smsOn"
+            android:summary="Read aloud when arriving"
+            android:title="Handle notifications" />
+
+        <MultiSelectListPreference
+            android:entries="@array/listApps"
+            android:entryValues="@array/valueApps"
+            android:key="smsApps"
+            android:summary=""
+            android:title="Activated apps" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="smsMax"
+            android:summary="Use the maximum volume to read the notifications"
+            android:title="Maximum volume" />
+
+        <EditTextPreference
+            android:defaultValue=""
+            android:dialogMessage="Names of senders (or groups) separated by commas to be blocked"
+            android:dialogTitle="Notifications blacklist"
+            android:key="notificationsBlackList"
+            android:summary="Notifications not allowed"
+            android:title="Blacklist" >
+        </EditTextPreference>
+
+        <ListPreference
+            android:defaultValue="2"
+            android:entries="@array/listSms"
+            android:entryValues="@array/valueSms"
+            android:key="smsType"
+            android:summary=""
+            android:title="Read the notifications ..." />
+
+        <Preference
+            android:key="smsTest"
+            android:summary="Test notification handling"
+            android:title="Test" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Switch on &amp; off" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="switchOnBt"
+            android:summary="Bluetooth will enable when Hatomico is activated"
+            android:title="Autoenable bluetooth" />
+
+        <Preference
+            android:key="switchOffBt"
+            android:summary="Hatomico will work when the device is connected"
+            android:title="Pair bluetooth device" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="screenOff"
+            android:summary="Switch off the screen after reading the messages"
+            android:title="Switch off the screen" />
+
+        <Preference
+            android:key="switchOff"
+            android:summary="You can also switch off Hatomico by clicking the icon after launching it"
+            android:title="Switch off Hatomico" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="autoSwitchOff"
+            android:summary="Finish Hatomico by putting the phone face down (not compatible with all models)"
+            android:title="Auto switch off" >
+        </CheckBoxPreference>
+
+        <EditTextPreference
+            android:defaultValue="l,c,c"
+            android:dialogMessage="l - long vibration, c - short vibration"
+            android:dialogTitle="Vibrating pattern"
+            android:key="offPattern"
+            android:summary="Off vibration indicator"
+            android:title="Vibrating pattern" >
+        </EditTextPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="About Hatomico" >
+        <Preference
+            android:key="version"
+            android:summary="Developed by Emperatriz"
+            android:title="Hatomico" />
+        <Preference
+            android:key="sendMail"
+            android:summary="Send a suggestion"
+            android:title="Suggestions" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="listArray">
+   <item>No wait</item>
+   <item>One second</item>
+   <item>Two seconds</item>
+   <item>Three seconds</item>
+   <item>Four seconds</item>
+   <item>Five seconds</item>
+   <item>Six seconds</item>
+</string-array>
+ 
+<string-array name="listValues">
+   <item>0</item>
+   <item>1</item>
+   <item>2</item>
+   <item>3</item>
+   <item>4</item>
+   <item>5</item>
+   <item>6</item>
+</string-array>
+
+<string-array name="listSms">
+   <item>By touching the screen</item>
+   <item>By approaching the hand</item>
+   <item>Automatically</item>
+</string-array>
+ 
+<string-array name="valueSms">
+   <item>0</item>
+   <item>1</item>
+   <item>2</item>
+</string-array>
+
+<string-array name="listApps">
+      <item>Google now</item>
+   <item>Hangouts</item>
+   <item>LINE</item>
+   <item>Telegram</item>
+   <item>Twitter</item>
+   <item>Whatsapp</item>
+   
+</string-array>
+ 
+<string-array name="valueApps">
+      <item>GoogleNow</item>
+   <item>Hangouts</item>   
+   <item>LINE</item>
+   <item>Telegram</item>
+   <item>Twitter</item>
+   <item>Whatsapp</item>
+   
+</string-array>
+
+</resources>
